@@ -4,8 +4,9 @@ import { graphql } from 'babel-plugin-relay/macro';
 import { createFragmentContainer } from 'react-relay';
 import { Props } from 'CountryPreviewCard';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import { Card, CardActionArea, CardMedia, IconButton, Typography, Icon } from '@material-ui/core';
+import { Card, CardActionArea, CardMedia, IconButton, Typography } from '@material-ui/core';
 import { green } from '@material-ui/core/colors';
+import AddCircle from '@material-ui/icons/AddCircle';
 
 import { Row } from '../../ui-library/layout';
 import {
@@ -132,15 +133,13 @@ export const PlainCountryPreviewCard: React.FC<Props> = (props) => {
       <Row className={classes.minInvestmentContainer}>
         <Typography>{data.name}</Typography>
         {showAddButton && (
-          <IconButton edge="start" aria-label="delete">
-            <Icon
-              style={{ color: green[500], fontSize: 30 }}
-              onClick={() => {
-                dispatch(addPlannedCountries({ alpha2Code, name }));
-              }}
-            >
-              add_circle
-            </Icon>
+          <IconButton edge="end" aria-label="add" onClick={() => {
+              dispatch(addPlannedCountries({ alpha2Code, name }));
+          }}
+          >
+              <AddCircle
+                  style={{ color: green[500], fontSize: 30 }}
+              />
           </IconButton>
         )}
         <Typography>{data.capital}</Typography>
