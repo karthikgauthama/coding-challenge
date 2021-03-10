@@ -1,6 +1,27 @@
-# Getting Started with Create React App
+# Getting Started with Trip Planner App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This Project is built just for demo purpose.
+
+## Main Packages used
+
+**react**,
+**redux**,
+**redux-Saga**,
+**material-ui**,
+**relay**,
+
+## Public API Used
+
+https://countries-274616.ew.r.appspot.com/
+
+API is not supported UPDATE operation , hence localStorage is used!
+
+## Internationalization is supported - currently PL and EN
+
+App is running at https://coding-challenge-trip-planner.herokuapp.com/
+
 
 ## Available Scripts
 
