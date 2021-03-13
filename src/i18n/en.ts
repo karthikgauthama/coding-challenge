@@ -8,7 +8,7 @@ export default {
   'Trip.selectedCountries': 'Selected Countries',
   'Country.location': ' is located in ',
   'Country.language': ' officially they speak ',
-  'Country.callingCode': ' and calling code is ',
+  'Country.callingCode': ' and the calling code is ',
   'Country.currency': ' and official currency is ',
   'Trip.DeleteTrip': 'DELETE TRIP',
 };
